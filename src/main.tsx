@@ -31,7 +31,7 @@ const focusedStyle = (feature: FeatureLike, resolution: number) => {
 
 let municipalityLayer = new VectorLayer({
   source: new VectorSource({
-    url: "/kws2100-kartbaserte-websystemer/geojson/kommuner.geojson",
+    url: "/MyFirstMap/public/kommuner.geojson",
     format: new GeoJSON(),
   }),
   style: new Style({
@@ -48,7 +48,7 @@ const map = new Map({
     municipalityLayer,
     new VectorLayer({
       source: new VectorSource({
-        url: "/kws2100-kartbaserte-websystemer/geojson/vgs.geojson",
+        url: "/MyFirstMap/public/vgs.geojson",
         format: new GeoJSON(),
       }),
     }),
